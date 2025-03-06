@@ -1,30 +1,13 @@
-x = input()
+x = int(input())
+print((x-1)//4 + 1)
 
-print((int(x)-1)//4 + 1)
-
-def bubble_sort(arr):
-    # Получаем длину массива для итерации
-    n = len(arr)
-    
-    # Внешний цикл, который проходит по всему массиву n-1 раз
-    for i in range(n-1):
-        # Внутренний цикл для сравнения соседних элементов
-        for j in range(n-1-i):
-            # Если текущий элемент больше следующего - меняем их местами
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
-    
-    # Возвращаем отсортированный массив
-    return arr
-
-# Пример использования
 numbers = [64, 34, 25, 12, 22, 11, 90]
-# Вызываем функцию сортировки и сохраняем результат
-sorted_numbers = bubble_sort(numbers)
-# Выводим отсортированный массив
-print("Отсортированный массив:", sorted_numbers)
+numbers.sort()
+print("Отсортированный массив:", numbers)
+
+for i in range(len(numbers)):
+    if numbers[i] % 2 != 0:
+        print(numbers[i])
 
 
-
-# command + C 
 
