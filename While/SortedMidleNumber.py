@@ -1,0 +1,1 @@
+x,y,z = map(input(),input(),input())
