@@ -1,6 +1,9 @@
-a = int(input())
-for i in range(a, 0, -1):
-    print(i * "*")
+a = int(input)
+b = int(input)
+c = int(input)
+
+for i in range():
+    print()
  
 
 
